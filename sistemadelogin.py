@@ -9,13 +9,13 @@ layout = [
     [sg.Text('', key='mensagem')],
 ]
 
-window = sg.Window('Login', layout=layout)
+window = sg.Window('caixa_de_login', layout=layout)
 
 while True:
     event, values = window.read()
     if event == sg.WIN_CLOSED:
         break
-    elif event == 'login':
+    elif event == 'Login':
         senha_correta = '123456'
         usuario_correto = 'gabriel'
         usuario = values['usuario']
